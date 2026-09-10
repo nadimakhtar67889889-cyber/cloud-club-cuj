@@ -1,1455 +1,1097 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
+    <title>AWS Student Builder Group | Central University Of Jammu</title>
 
-  <title>AWS Student Builder Group | Central University Of Jammu</title>
+    <!-- Google Font -->
 
-  <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-  <link
-    rel="preconnect"
-    href="https://fonts.googleapis.com"
-  />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
+    <!-- Font Awesome -->
 
-  <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
+    <!-- CSS -->
 
-  <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <!-- Navbar -->
 
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="brand">
+          <div class="logo-wrapper">
+            <img
+              src="assets/cloudclublogo.png"
+              alt="AWS Student Builder Group Logo"
+              class="nav-logo"
+            />
 
-<body>
+            <img
+              src="assets/cujlogo.png"
+              alt="Central University Of Jammu Logo"
+              class="nav-logo"
+            />
+          </div>
+        </a>
 
-  <!-- Navbar -->
+        <!-- Hamburger -->
 
-  <nav class="navbar">
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Open navigation menu"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-    <div class="nav-container">
+        <!-- Navigation -->
 
-      <a href="#" class="brand">
+        <ul class="nav-links" id="navLinks">
+          <li>
+            <a href="#about">About</a>
+          </li>
 
-        <div class="logo-wrapper">
+          <li>
+            <a href="#why-join">Why Join</a>
+          </li>
 
+          <li>
+            <a href="#upcoming-events">Upcoming Events</a>
+          </li>
+
+          <li>
+            <a href="#gallery">Gallery</a>
+          </li>
+
+          <li>
+            <a href="#mentors">Mentors</a>
+          </li>
+
+          <li>
+            <a href="#members">Team</a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.meetup.com/aws-sbg-at-central-university-of-jammu/?utm_medium"
+              class="nav-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Join Us
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <header class="hero">
+      <div class="hero-background">
+        <div class="hero-orb orb-one"></div>
+        <div class="hero-orb orb-two"></div>
+
+        <div class="hero-grid"></div>
+      </div>
+
+      <div class="hero-container">
+        <!-- Left Side -->
+
+        <div class="hero-content">
+          <p class="hero-university">Central University Of Jammu</p>
+
+          <h1>
+            AWS Student
+            <span>Builder Group</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Learn
+            <b>•</b>
+            Build
+            <b>•</b>
+            Innovate with AWS Cloud
+          </p>
+
+          <p class="hero-description">
+            A student driven technical community where students learn cloud
+            technologies, build real world projects, explore AI and DevOps,
+            participate in events, and grow together as future technology
+            builders.
+          </p>
+
+          <div class="hero-buttons">
+            <a
+              href="https://bit.ly/3S8YEXM"
+              class="btn primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              AWS Builder Center
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="#upcoming-events" class="btn secondary"> View Events </a>
+          </div>
+
+          <div class="hero-mini-info">
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <span>Build Projects</span>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-cloud"></i>
+              <span>Learn Cloud</span>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-users"></i>
+              <span>Grow Together</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side Logo -->
+
+        <div class="hero-logo-area">
+          <img
+            src="assets/cloudclublogo.png"
+            alt="AWS Student Builder Group"
+            class="hero-logo"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- Stats Bar -->
+
+    <section class="stats-section">
+      <div class="section-container stats-container">
+        <div class="stat-item">
+          <span class="stat-number" data-target="500" data-suffix="+"> 0 </span>
+
+          <span class="stat-label"> Active Members </span>
+        </div>
+
+        <div class="stat-divider"></div>
+
+        <div class="stat-item">
+          <span class="stat-number" data-target="10" data-suffix="+"> 0 </span>
+
+          <span class="stat-label"> Events Held </span>
+        </div>
+
+        <div class="stat-divider"></div>
+
+        <div class="stat-item">
+          <span class="stat-number" data-target="10" data-suffix="+"> 0 </span>
+
+          <span class="stat-label"> Tech Sessions </span>
+        </div>
+
+        <div class="stat-divider"></div>
+
+        <div class="stat-item">
+          <span class="stat-number" data-target="2" data-suffix="+"> 0 </span>
+
+          <span class="stat-label"> Years On Campus </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+
+    <section id="about" class="section about-section">
+      <div class="section-container">
+        <div class="section-heading">
+          <span class="section-label"> WHO WE ARE </span>
+
+          <h2>
+            Building the next generation
+            <span>of student builders.</span>
+          </h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              The AWS Student Builder Group at Central University Of Jammu is a
+              student-led technical community dedicated to helping students
+              explore cloud computing, DevOps, AI, and modern technology.
+            </p>
+
+            <p>
+              Our objective is to bridge the gap between academic learning and
+              real world industry requirements through hands on workshops,
+              technical sessions, collaborative projects, hackathons, and
+              community activities.
+            </p>
+
+            <p>
+              Whether you are a beginner or an experienced learner, our
+              community provides an environment to learn, experiment, build,
+              collaborate, and grow together.
+            </p>
+          </div>
+
+          <div class="about-highlight">
+            <div class="highlight-icon">
+              <i class="fa-brands fa-aws"></i>
+            </div>
+
+            <h3>Learn. Build. Innovate.</h3>
+
+            <p>
+              Explore cloud technology and turn your ideas into practical
+              projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission / Scroll Reveal Section -->
+
+    <section id="mission" class="section mission-section">
+      <div class="section-container">
+        <span class="section-label"> OUR MISSION </span>
+
+        <p class="reveal-text" data-reveal>
+          We believe the best way to learn the cloud is to build in it. Every
+          workshop, hackathon and lecture we run exists to turn curious students
+          into confident builders who can design, deploy and scale real systems
+          on AWS.
+        </p>
+      </div>
+    </section>
+
+    <!-- Why Join Section -->
+
+    <section id="why-join" class="section light-section">
+      <div class="section-container">
+        <div class="section-heading centered">
+          <span class="section-label"> WHY JOIN US </span>
+
+          <h2>
+            More than a club.
+            <span>A builder community.</span>
+          </h2>
+
+          <p>
+            Learn practical skills, work with others and create things that
+            strengthen your portfolio.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-cloud"></i>
+            </div>
+
+            <h3>Cloud Computing</h3>
+
+            <p>
+              Learn cloud fundamentals and work with AWS, Azure and GCP through
+              guided labs and practical learning.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+
+            <h3>DevOps & Automation</h3>
+
+            <p>
+              Explore CI/CD, Docker, automation and infrastructure technologies
+              used by modern software teams.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+
+            <h3>Hands-on Projects</h3>
+
+            <p>
+              Build practical projects that improve your technical skills and
+              strengthen your portfolio.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+
+            <h3>Events & Hackathons</h3>
+
+            <p>
+              Participate in workshops, technical sessions, coding events and
+              hackathons with fellow builders.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-user-graduate"></i>
+            </div>
+
+            <h3>Career Guidance</h3>
+
+            <p>
+              Get guidance around internships, certifications, resumes, projects
+              and technical interviews.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+
+            <h3>Certification Support</h3>
+
+            <p>
+              Prepare for cloud certifications with curated resources,
+              mentorship and community support.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+
+    <section id="upcoming-events" class="section upcoming-section">
+      <div class="section-container">
+        <div class="section-heading centered">
+          <span class="section-label"> WHAT'S NEXT </span>
+
+          <h2>
+            Upcoming
+            <span>Events.</span>
+          </h2>
+
+          <p>
+            Save your spot for what's coming next from AWS Student Builder
+            Group, Central University Of Jammu.
+          </p>
+        </div>
+
+        <div class="upcoming-grid">
+          <!-- Upcoming Event 1 -->
+
+          <a href="event.html?event=welcome-2026" class="upcoming-card">
+            <span class="upcoming-badge"> Upcoming </span>
+
+            <div class="upcoming-icon">
+              <i class="fa-solid fa-hand-sparkles"></i>
+            </div>
+
+            <h3>Welcome 2026</h3>
+
+            <p>
+              The official welcome event of the season, opening with a talk by
+              our mentor Dr. Suresh Limkar (Suresh Sir) on cloud computing and
+              what it takes to be a builder. The session wraps up with a fun,
+              fast paced quiz to test what the audience picked up with
+              shout outs and prizes for the top scorers. A great first event for
+              anyone new to the community.
+            </p>
+
+            <ul class="upcoming-meta">
+              <li>
+                <i class="fa-solid fa-chalkboard-user"></i>
+                Lecture by Suresh Sir
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-question"></i>
+                Live quiz session
+              </li>
+            </ul>
+
+            <span class="event-link">
+              View Event
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </a>
+
+          <!-- Upcoming Event 2 -->
+
+          <a href="event.html?event=cloud-tournament" class="upcoming-card">
+            <span class="upcoming-badge"> Upcoming </span>
+
+            <div class="upcoming-icon">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+
+            <h3>Cloud Tournament</h3>
+
+            <p>
+              A gamified, team based cloud competition in the spirit of AWS
+              GameDay and AWS Cloud Quest tournaments. Teams will work through
+              live, sandboxed AWS labs and real-world scenario challenges 
+              covering services like EC2, S3, IAM and networking. Racing
+              against the clock and each other on a shared leaderboard. No prior
+              AWS experience is required, just curiosity and a willingness to
+              build under pressure.
+            </p>
+
+            <ul class="upcoming-meta">
+              <li>
+                <i class="fa-solid fa-laptop-code"></i>
+                Online cloud labs
+              </li>
+              <li>
+                <i class="fa-solid fa-ranking-star"></i>
+                Live leaderboard
+              </li>
+            </ul>
+
+            <span class="event-link">
+              View Event
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </a>
+
+          <!-- Upcoming Event 3 -->
+
+          <a href="event.html?event=community-day" class="upcoming-card">
+            <span class="upcoming-badge"> November 2026 </span>
+
+            <div class="upcoming-icon">
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+
+            <h3>AWS Student Community Day</h3>
+
+            <p>
+              Modeled on AWS's own Community Day format held across cities in
+              India every year, this will be our chapter's take on a full day of
+              community led cloud learning. Expect technical talks on AWS
+              services, generative AI and DevOps, hands on demo stations, and
+              open conversations with AWS enthusiasts, alumni and community
+              builders. A peer to peer event where students learn from students
+              as much as from speakers.
+            </p>
+
+            <ul class="upcoming-meta">
+              <li>
+                <i class="fa-solid fa-microphone"></i>
+                Talks & keynote
+              </li>
+              <li>
+                <i class="fa-solid fa-diagram-project"></i>
+                Hands-on demo stations
+              </li>
+            </ul>
+
+            <span class="event-link">
+              View Event
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mentors Section -->
+
+    <section id="mentors" class="section mentor-section">
+      <div class="section-container">
+        <span class="section-label mentor-kicker">
+          FACULTY MENTORSHIP &amp; GUIDANCE
+        </span>
+
+        <div class="mentor-grid">
+          <!-- Mentor 1 -->
+
+          <div class="mentor-card">
+            <div class="mentor-photo">
+              <img src="assets/mentors/rakesh-kumar-jha.png" alt="" />
+            </div>
+
+            <div class="mentor-info">
+              <span class="mentor-badge"> Mentor, ECE Department </span>
+
+              <h3>Prof. (Dr.) Rakesh Kumar Jha</h3>
+
+              <p class="mentor-title">
+                Head of Department, Electronics &amp; Communication Engineering
+              </p>
+
+              <p class="mentor-dept">
+                Department of Electronics &amp; Communication Engineering, CUJ
+              </p>
+
+              <p class="mentor-about">
+                Leads ECE at CUJ with a focus on hands-on, industry-ready
+                learning and research through SDCSS (ISRO).
+              </p>
+
+              <div class="mentor-contact">
+                <a
+                  href="https://www.linkedin.com/in/prof-rakesh-kumar-jha-42522222/"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="mailto:rakesh.ece@cujammu.ac.in" aria-label="Email">
+                  <i class="fa-solid fa-envelope"></i>
+                  rakesh.ece@cujammu.ac.in
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mentor 2 -->
+
+          <div class="mentor-card">
+            <div class="mentor-photo">
+              <img src="assets/mentors/suresh-limkar.png" alt="" />
+            </div>
+
+            <div class="mentor-info">
+              <span class="mentor-badge"> Faculty Mentor, AWS SBG </span>
+
+              <h3>Dr. Suresh Vishnudas Limkar</h3>
+
+              <p class="mentor-title">
+                Assistant Professor, Computer Science &amp; Engineering
+              </p>
+
+              <p class="mentor-dept">
+                Department of Computer Science &amp; Engineering, CUJ
+              </p>
+
+              <p class="mentor-about">
+                Mentors the AWS Student Builder Group and leads its cloud
+                computing sessions and workshops.
+              </p>
+
+              <div class="mentor-contact">
+                <a
+                  href="https://www.linkedin.com/in/suresh-limkar-7b8b7322a/"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="mailto:suresh.cse@cujammu.ac.in" aria-label="Email">
+                  <i class="fa-solid fa-envelope"></i>
+                  suresh.cse@cujammu.ac.in
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Past Events / Highlights Section -->
+
+    <section id="past-events" class="section events-section">
+      <div class="section-container">
+        <div class="section-heading centered">
+          <span class="section-label"> PAST HIGHLIGHTS </span>
+
+          <h2>
+            Events that helped us
+            <span>build and learn.</span>
+          </h2>
+
+          <p>A look back at our workshops, talks and technical sessions.</p>
+        </div>
+
+        <div class="events-grid">
+          <!-- Event 1 -->
+
+          <a href="event.html?event=orientation" class="event-card">
+            <div class="event-card-top">
+              <span class="event-number"> 01 </span>
+
+              <span class="event-date"> 26 Jan 2026 </span>
+            </div>
+
+            <h3>
+              Introduction & Orientation of Central University Jammu Cloud Club
+            </h3>
+
+            <p>
+              Kickstart the cloud journey and explore opportunities within the
+              student community.
+            </p>
+
+            <span class="event-link">
+              View Event
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </a>
+
+          <!-- Event 2 -->
+
+          <a href="event.html?event=ama" class="event-card">
+            <div class="event-card-top">
+              <span class="event-number"> 02 </span>
+
+              <span class="event-date"> 01 Mar 2026 </span>
+            </div>
+
+            <h3>Interactive Ask Me Anything Session (AMA)</h3>
+
+            <p>
+              An interactive session to discuss AWS, cloud insights, practices
+              and applications.
+            </p>
+
+            <span class="event-link">
+              View Event
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </a>
+
+          <!-- Event 3 -->
+
+          <a href="event.html?event=techxplore" class="event-card">
+            <div class="event-card-top">
+              <span class="event-number"> 03 </span>
+
+              <span class="event-date"> 10 Apr 2026 </span>
+            </div>
+
+            <h3>AWS TechXplore</h3>
+
+            <p>
+              A technical session focused on cloud deployment, IAM fundamentals
+              and AWS.
+            </p>
+
+            <span class="event-link">
+              View Event
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </a>
+
+          <!-- Event 4 -->
+
+          <a href="event.html?event=kiro" class="event-card">
+            <div class="event-card-top">
+              <span class="event-number"> 04 </span>
+
+              <span class="event-date"> 27 Jun 2026 </span>
+            </div>
+
+            <h3>From Idea to App: Building with IDE & Kiro CLI</h3>
+
+            <p>
+              A practical session with Jasdeep Singh Bhalla focused on turning
+              ideas into applications.
+            </p>
+
+            <span class="event-link">
+              View Event
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </a>
+
+          <!-- Event 5 -->
+
+          <a href="event.html?event=agentic-ai" class="event-card">
+            <div class="event-card-top">
+              <span class="event-number"> 05 </span>
+
+              <span class="event-date"> 01 Jul 2026 </span>
+            </div>
+
+            <h3>Agentic AI on AWS</h3>
+
+            <p>
+              AI Tech Talk Series hosted by AWS Skills Centers exploring agentic
+              AI and AWS.
+            </p>
+
+            <span class="event-link">
+              View Event
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Gallery -->
+
+    <section id="gallery" class="section light-section gallery-section">
+      <div class="section-container">
+        <div class="section-heading centered">
+          <span class="section-label"> IN PICTURES </span>
+
+          <h2>
+            Moments from our
+            <span>events.</span>
+          </h2>
+
+          <p>
+            A visual look back at workshops, sessions and community meetups.
+          </p>
+        </div>
+
+        <div class="slider" id="gallerySlider">
+          <div class="slider-track" id="sliderTrack">
+            <div class="slide">
+              <img src="assets/events/event-1.png" alt="Orientation Day" />
+            </div>
+
+            <div class="slide">
+              <img src="assets/events/event-2.png" alt="AMA Session" />
+            </div>
+
+            <div class="slide">
+              <img src="assets/events/event-3.png" alt="AWS TechXplore" />
+            </div>
+
+            <div class="slide">
+              <img src="assets/events/event-4.png" alt="Idea to App Workshop" />
+            </div>
+
+            <div class="slide">
+              <img src="assets/events/event-5.png" alt="Agentic AI on AWS" />
+            </div>
+
+            <div class="slide">
+              <img src="assets/events/event-6.png" alt="Community Meetup" />
+            </div>
+
+          </div>
+
+          <button
+            class="slider-arrow prev"
+            id="sliderPrev"
+            aria-label="Previous photo"
+          >
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <button
+            class="slider-arrow next"
+            id="sliderNext"
+            aria-label="Next photo"
+          >
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <div class="slider-dots" id="sliderDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Current Core Team -->
+
+    <section id="members" class="section light-section">
+      <div class="section-container">
+        <div class="section-heading centered">
+          <span class="section-label"> OUR TEAM </span>
+
+          <h2>Current Working Team</h2>
+
+          <p>
+            The team currently driving the AWS Student Builder Group at Central
+            University Of Jammu.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <!-- Mrigank -->
+
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="assets/team/mrigank.jpg" alt="Mrigank Jaiswal" />
+            </div>
+
+            <h3>Mrigank Jaiswal</h3>
+
+            <p>Captain</p>
+          </div>
+
+          <!-- Nilesh -->
+
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="assets/team/nilesh.jpg" alt="Nilesh Kumar" />
+            </div>
+
+            <h3>Nilesh Kumar</h3>
+
+            <p>Vice Captain</p>
+          </div>
+
+          <!-- Divyani -->
+
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="assets/team/divyani.jpg" alt="Divyani Gupta" />
+            </div>
+
+            <h3>Divyani Gupta</h3>
+
+            <p>Technical Lead</p>
+          </div>
+
+          <!-- Amrit -->
+
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="assets/team/amrit.jpg" alt="Amrit Puri" />
+            </div>
+
+            <h3>Amrit Puri</h3>
+
+            <p>Social Media Lead</p>
+          </div>
+
+          <!-- Shivam -->
+
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="assets/team/shivam.jpg" alt="Shivam Yadav" />
+            </div>
+
+            <h3>Shivam Yadav</h3>
+
+            <p>Events & Outreach Lead</p>
+          </div>
+
+          <!-- Robins -->
+
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="assets/team/robins.jpg" alt="Robins Yadav" />
+            </div>
+
+            <h3>Robins Yadav</h3>
+
+            <p>Community & Engagement Lead</p>
+          </div>
+        </div>
+
+        <!-- New Core Team -->
+
+        <div class="new-core-team">
+          <div class="new-core-team-heading">
+            <span class="section-label"> 2026–27 </span>
+
+            <h3>New Core Team</h3>
+
+            <p>The student leads shaping the next chapter of AWS SBG CUJ.</p>
+          </div>
+
+          <div class="new-core-team-grid">
+            <!-- Nadim -->
+
+            <div class="new-core-team-card">
+              <div class="new-core-photo">
+                <img src="assets/team/nadim.png" alt="" />
+              </div>
+
+              <h4>Nadim Akhtar</h4>
+
+              <p>Technical Lead</p>
+            </div>
+
+            <!-- Anuj -->
+
+            <div class="new-core-team-card">
+              <div class="new-core-photo">
+                <img src="assets/team/anuj.png" alt="" />
+              </div>
+
+              <h4>Anuj Mishra</h4>
+
+              <p>Social Media Lead</p>
+            </div>
+
+            <!-- Unnati -->
+
+            <div class="new-core-team-card">
+              <div class="new-core-photo">
+                <img src="assets/team/unnati.png" alt="" />
+              </div>
+
+              <h4>Unnati Gupta</h4>
+
+              <p>Events & Outreach Lead</p>
+            </div>
+
+            <!-- Abhinav -->
+
+            <div class="new-core-team-card">
+              <div class="new-core-photo">
+                <img src="assets/team/abhinav.png" alt="" />
+              </div>
+
+              <h4>Abhinav Kumar</h4>
+
+              <p>Community & Engagement Lead</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WhatsApp Community -->
+
+    <section class="whatsapp-section">
+      <div class="whatsapp-card">
+        <div class="whatsapp-info">
+          <span class="whatsapp-kicker">
+            <i class="fa-brands fa-whatsapp"></i>
+            Community Chat
+          </span>
+
+          <h3 class="whatsapp-heading">Join our WhatsApp Group</h3>
+
+          <p class="whatsapp-text">
+            Get event updates, resources and community discussions straight from
+            the AWS Student Builder Group at Central University Of Jammu.
+          </p>
+
+          <a
+            href="https://chat.whatsapp.com/Jc0kMEkO30XHVKgD3YGAwX?s=sh&p=a&mlu=4&ilr=4"
+            class="whatsapp-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+            Join WhatsApp Group
+          </a>
+        </div>
+
+        <div class="whatsapp-divider"></div>
+
+        <div class="whatsapp-qr-block">
+          <div class="whatsapp-qr-frame">
+            <img
+              src="assets/whatsapp-qr.png"
+              alt="Scan to join the AWS Student Builder Group WhatsApp group"
+            />
+          </div>
+
+          <span class="whatsapp-qr-label"> Scan to join instantly </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-brand">
           <img
             src="assets/cloudclublogo.png"
             alt="AWS Student Builder Group Logo"
-            class="nav-logo"
           />
 
-          <img
-            src="assets/cujlogo.png"
-            alt="Central University Of Jammu Logo"
-            class="nav-logo"
-          />
-
-        </div>
-
-      </a>
-
-
-      <!-- Hamburger -->
-
-      <button
-        class="hamburger"
-        id="hamburger"
-        aria-label="Open navigation menu"
-        type="button"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-
-      <!-- Navigation -->
-
-      <ul class="nav-links" id="navLinks">
-
-        <li>
-          <a href="#about">About</a>
-        </li>
-
-        <li>
-          <a href="#why-join">Why Join</a>
-        </li>
-
-        <li>
-          <a href="#upcoming-events">Upcoming Events</a>
-        </li>
-
-        <li>
-          <a href="#mentors">Mentors</a>
-        </li>
-
-        <li>
-          <a href="#members">Team</a>
-        </li>
-
-        <li>
-          <a
-            href="https://www.meetup.com/aws-sbg-at-central-university-of-jammu/?utm_medium"
-            class="nav-btn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Join Us
-          </a>
-        </li>
-
-      </ul>
-
-    </div>
-
-  </nav>
-
-
-  <!-- Hero Section -->
-
-  <header class="hero">
-
-    <div class="hero-background">
-
-      <div class="hero-orb orb-one"></div>
-      <div class="hero-orb orb-two"></div>
-
-      <div class="hero-grid"></div>
-
-    </div>
-
-
-    <div class="hero-container">
-
-      <!-- Left Side -->
-
-      <div class="hero-content">
-
-        <p class="hero-university">
-          Central University Of Jammu
-        </p>
-
-
-        <h1>
-          AWS Student
-          <span>Builder Group</span>
-        </h1>
-
-
-        <p class="hero-subtitle">
-          Learn
-          <b>•</b>
-          Build
-          <b>•</b>
-          Innovate
-          with AWS Cloud
-        </p>
-
-
-        <p class="hero-description">
-          A student-driven technical community where students
-          learn cloud technologies, build real-world projects,
-          explore AI and DevOps, participate in events, and
-          grow together as future technology builders.
-        </p>
-
-
-        <div class="hero-buttons">
-
-          <a
-            href="https://bit.ly/3S8YEXM"
-            class="btn primary"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            AWS Builder Center
-            <i class="fa-solid fa-arrow-right"></i>
-          </a>
-
-          <a href="#upcoming-events" class="btn secondary">
-            View Events
-          </a>
-
-        </div>
-
-
-        <div class="hero-mini-info">
-
           <div>
-            <i class="fa-solid fa-code"></i>
-            <span>Build Projects</span>
-          </div>
+            <h3>AWS Student Builder Group</h3>
 
-          <div>
-            <i class="fa-solid fa-cloud"></i>
-            <span>Learn Cloud</span>
+            <p>Central University Of Jammu</p>
           </div>
-
-          <div>
-            <i class="fa-solid fa-users"></i>
-            <span>Grow Together</span>
-          </div>
-
         </div>
 
-      </div>
-
-
-      <!-- Right Side Logo -->
-
-      <div class="hero-logo-area">
-
-        <img
-          src="assets/cloudclublogo.png"
-          alt="AWS Student Builder Group"
-          class="hero-logo"
-        />
-
-      </div>
-
-    </div>
-
-  </header>
-
-
-  <!-- About Section -->
-
-  <section id="about" class="section about-section">
-
-    <div class="section-container">
-
-      <div class="section-heading">
-
-        <span class="section-label">
-          WHO WE ARE
-        </span>
-
-        <h2>
-          Building the next generation
-          <span>of student builders.</span>
-        </h2>
-
-      </div>
-
-
-      <div class="about-grid">
-
-        <div class="about-text">
-
-          <p>
-            The AWS Student Builder Group at Central University
-            Of Jammu is a student-led technical community dedicated
-            to helping students explore cloud computing, DevOps,
-            AI, and modern technology.
-          </p>
-
-          <p>
-            Our objective is to bridge the gap between academic
-            learning and real-world industry requirements through
-            hands-on workshops, technical sessions, collaborative
-            projects, hackathons, and community activities.
-          </p>
-
-          <p>
-            Whether you are a beginner or an experienced learner,
-            our community provides an environment to learn,
-            experiment, build, collaborate, and grow together.
-          </p>
-
-        </div>
-
-
-        <div class="about-highlight">
-
-          <div class="highlight-icon">
-            <i class="fa-brands fa-aws"></i>
-          </div>
-
-          <h3>
-            Learn. Build. Innovate.
-          </h3>
-
-          <p>
-            Explore cloud technology and turn your ideas
-            into practical projects.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- Why Join Section -->
-
-  <section id="why-join" class="section light-section">
-
-    <div class="section-container">
-
-      <div class="section-heading centered">
-
-        <span class="section-label">
-          WHY JOIN US
-        </span>
-
-        <h2>
-          More than a club.
-          <span>A builder community.</span>
-        </h2>
-
-        <p>
-          Learn practical skills, work with others and
-          create things that strengthen your portfolio.
+        <p class="footer-description">
+          A student community focused on cloud learning, innovation, technical
+          skills and building with AWS.
         </p>
 
-      </div>
+        <div class="social-links">
+          <!-- Instagram -->
 
+          <div class="social-wrapper">
+            <a
+              href="https://www.instagram.com/aws.cujammu"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon instagram"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
 
-      <div class="feature-grid">
-
-        <div class="feature-card">
-
-          <div class="feature-icon">
-            <i class="fa-solid fa-cloud"></i>
+            <span class="social-label"> Instagram </span>
           </div>
 
-          <h3>
-            Cloud Computing
-          </h3>
+          <!-- LinkedIn -->
 
-          <p>
-            Learn cloud fundamentals and work with AWS,
-            Azure and GCP through guided labs and practical
-            learning.
-          </p>
+          <div class="social-wrapper">
+            <a
+              href="https://www.linkedin.com/company/aws-cloud-club-central-university-of-jammu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon linkedin"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
 
-        </div>
-
-
-        <div class="feature-card">
-
-          <div class="feature-icon">
-            <i class="fa-solid fa-gears"></i>
+            <span class="social-label"> LinkedIn </span>
           </div>
 
-          <h3>
-            DevOps & Automation
-          </h3>
+          <!-- Meetup -->
 
-          <p>
-            Explore CI/CD, Docker, automation and
-            infrastructure technologies used by modern
-            software teams.
-          </p>
+          <div class="social-wrapper">
+            <a
+              href="https://www.meetup.com/aws-cloud-club-at-central-university-of-jammu/members/?op=all"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon meetup"
+              aria-label="Meetup"
+            >
+              <i class="fa-solid fa-users"></i>
+            </a>
 
-        </div>
-
-
-        <div class="feature-card">
-
-          <div class="feature-icon">
-            <i class="fa-solid fa-code"></i>
+            <span class="social-label"> Meetup </span>
           </div>
-
-          <h3>
-            Hands-on Projects
-          </h3>
-
-          <p>
-            Build practical projects that improve your
-            technical skills and strengthen your portfolio.
-          </p>
-
         </div>
 
+        <div class="footer-line"></div>
 
-        <div class="feature-card">
-
-          <div class="feature-icon">
-            <i class="fa-solid fa-trophy"></i>
-          </div>
-
-          <h3>
-            Events & Hackathons
-          </h3>
-
-          <p>
-            Participate in workshops, technical sessions,
-            coding events and hackathons with fellow builders.
-          </p>
-
-        </div>
-
-
-        <div class="feature-card">
-
-          <div class="feature-icon">
-            <i class="fa-solid fa-user-graduate"></i>
-          </div>
-
-          <h3>
-            Career Guidance
-          </h3>
-
-          <p>
-            Get guidance around internships, certifications,
-            resumes, projects and technical interviews.
-          </p>
-
-        </div>
-
-
-        <div class="feature-card">
-
-          <div class="feature-icon">
-            <i class="fa-solid fa-certificate"></i>
-          </div>
-
-          <h3>
-            Certification Support
-          </h3>
-
-          <p>
-            Prepare for cloud certifications with curated
-            resources, mentorship and community support.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- Upcoming Events Section -->
-
-  <section id="upcoming-events" class="section upcoming-section">
-
-    <div class="section-container">
-
-      <div class="section-heading centered">
-
-        <span class="section-label">
-          WHAT'S NEXT
-        </span>
-
-        <h2>
-          Upcoming
-          <span>Events.</span>
-        </h2>
-
-        <p>
-          Save your spot for what's coming next from AWS
-          Student Builder Group, Central University Of Jammu.
+        <p class="footer-note">
+          © 2026 AWS Student Builder Group Central University Of Jammu • All
+          rights reserved
         </p>
-
       </div>
+    </footer>
 
+    <!-- JavaScript -->
 
-      <div class="upcoming-grid">
-
-
-        <!-- Upcoming Event 1 -->
-
-        <a href="event.html?event=welcome-2026" class="upcoming-card">
-
-          <span class="upcoming-badge">
-            Upcoming
-          </span>
-
-          <div class="upcoming-icon">
-            <i class="fa-solid fa-hand-sparkles"></i>
-          </div>
-
-          <h3>
-            Welcome 2026
-          </h3>
-
-          <p>
-            The official welcome event of the season, opening
-            with a talk by our mentor Dr. Suresh Limkar
-            (Suresh Sir) on cloud computing and what it takes
-            to be a builder. The session wraps up with a fun,
-            fast-paced quiz to test what the audience picked
-            up — with shout-outs and prizes for the top
-            scorers. A great first event for anyone new to
-            the community.
-          </p>
-
-          <ul class="upcoming-meta">
-            <li>
-              <i class="fa-solid fa-chalkboard-user"></i>
-              Lecture by Suresh Sir
-            </li>
-            <li>
-              <i class="fa-solid fa-circle-question"></i>
-              Live quiz session
-            </li>
-          </ul>
-
-          <span class="event-link">
-            View Event
-            <i class="fa-solid fa-arrow-right"></i>
-          </span>
-
-        </a>
-
-
-        <!-- Upcoming Event 2 -->
-
-        <a href="event.html?event=cloud-tournament" class="upcoming-card">
-
-          <span class="upcoming-badge">
-            Upcoming
-          </span>
-
-          <div class="upcoming-icon">
-            <i class="fa-solid fa-trophy"></i>
-          </div>
-
-          <h3>
-            Cloud Tournament
-          </h3>
-
-          <p>
-            A gamified, team-based cloud competition in the
-            spirit of AWS GameDay and AWS Cloud Quest
-            tournaments. Teams will work through live,
-            sandboxed AWS labs and real-world scenario
-            challenges — covering services like EC2, S3, IAM
-            and networking — racing against the clock and each
-            other on a shared leaderboard. No prior AWS
-            experience is required, just curiosity and a
-            willingness to build under pressure.
-          </p>
-
-          <ul class="upcoming-meta">
-            <li>
-              <i class="fa-solid fa-laptop-code"></i>
-              Online cloud labs
-            </li>
-            <li>
-              <i class="fa-solid fa-ranking-star"></i>
-              Live leaderboard
-            </li>
-          </ul>
-
-          <span class="event-link">
-            View Event
-            <i class="fa-solid fa-arrow-right"></i>
-          </span>
-
-        </a>
-
-
-        <!-- Upcoming Event 3 -->
-
-        <a href="event.html?event=community-day" class="upcoming-card">
-
-          <span class="upcoming-badge">
-            November 2026
-          </span>
-
-          <div class="upcoming-icon">
-            <i class="fa-solid fa-people-group"></i>
-          </div>
-
-          <h3>
-            AWS Student Community Day
-          </h3>
-
-          <p>
-            Modeled on AWS's own Community Day format held
-            across cities in India every year, this will be
-            our chapter's take on a full day of community-led
-            cloud learning. Expect technical talks on AWS
-            services, generative AI and DevOps, hands-on
-            demo stations, and open conversations with AWS
-            enthusiasts, alumni and community builders — a
-            peer-to-peer event where students learn from
-            students as much as from speakers.
-          </p>
-
-          <ul class="upcoming-meta">
-            <li>
-              <i class="fa-solid fa-microphone"></i>
-              Talks & keynote
-            </li>
-            <li>
-              <i class="fa-solid fa-diagram-project"></i>
-              Hands-on demo stations
-            </li>
-          </ul>
-
-          <span class="event-link">
-            View Event
-            <i class="fa-solid fa-arrow-right"></i>
-          </span>
-
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- Mentors Section -->
-
-  <section id="mentors" class="section mentor-section">
-
-    <div class="section-container">
-
-      <span class="section-label mentor-kicker">
-        FACULTY MENTORSHIP &amp; GUIDANCE
-      </span>
-
-
-      <div class="mentor-grid">
-
-
-        <!-- Mentor 1 -->
-
-        <div class="mentor-card">
-
-          <div class="mentor-photo">
-
-            <img
-              src="assets/mentors/rakesh-kumar-jha.png"
-              alt=""
-            />
-
-          </div>
-
-          <div class="mentor-info">
-
-            <span class="mentor-badge">
-              Mentor, ECE Department
-            </span>
-
-            <h3>
-              Prof. (Dr.) Rakesh Kumar Jha
-            </h3>
-
-            <p class="mentor-title">
-              Head of Department, Electronics &amp; Communication
-              Engineering
-            </p>
-
-            <p class="mentor-dept">
-              Department of Electronics &amp; Communication
-              Engineering, CUJ
-            </p>
-
-            <p class="mentor-about">
-              Leads ECE at CUJ with a focus on hands-on,
-              industry-ready learning and research through
-              SDCSS (ISRO).
-            </p>
-
-            <div class="mentor-contact">
-
-              <a href="https://www.linkedin.com/in/prof-rakesh-kumar-jha-42522222/" aria-label="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-              </a>
-
-              <a href="mailto:rakesh.ece@cujammu.ac.in" aria-label="Email">
-                <i class="fa-solid fa-envelope"></i>
-                rakesh.ece@cujammu.ac.in
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <!-- Mentor 2 -->
-
-        <div class="mentor-card">
-
-          <div class="mentor-photo">
-
-            <img
-              src="assets/mentors/suresh-limkar.png"
-              alt=""
-            />
-
-          </div>
-
-          <div class="mentor-info">
-
-            <span class="mentor-badge">
-              Faculty Mentor, AWS SBG
-            </span>
-
-            <h3>
-              Dr. Suresh Vishnudas Limkar
-            </h3>
-
-            <p class="mentor-title">
-              Assistant Professor, Computer Science &amp;
-              Engineering
-            </p>
-
-            <p class="mentor-dept">
-              Department of Computer Science &amp; Engineering, CUJ
-            </p>
-
-            <p class="mentor-about">
-              Mentors the AWS Student Builder Group and leads
-              its cloud computing sessions and workshops.
-            </p>
-
-            <div class="mentor-contact">
-
-              <a href="https://www.linkedin.com/in/suresh-limkar-7b8b7322a/" aria-label="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-              </a>
-
-              <a href="mailto:suresh.cse@cujammu.ac.in" aria-label="Email">
-                <i class="fa-solid fa-envelope"></i>
-                suresh.cse@cujammu.ac.in
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- Past Events / Highlights Section -->
-
-  <section id="past-events" class="section events-section">
-
-    <div class="section-container">
-
-      <div class="section-heading centered">
-
-        <span class="section-label">
-          PAST HIGHLIGHTS
-        </span>
-
-        <h2>
-          Events that helped us
-          <span>build and learn.</span>
-        </h2>
-
-        <p>
-          A look back at our workshops, talks and technical sessions.
-        </p>
-
-      </div>
-
-
-      <div class="events-grid">
-
-
-        <!-- Event 1 -->
-
-        <a
-          href="event.html?event=orientation"
-          class="event-card"
-        >
-
-          <div class="event-card-top">
-
-            <span class="event-number">
-              01
-            </span>
-
-            <span class="event-date">
-              26 Jan 2026
-            </span>
-
-          </div>
-
-          <h3>
-            Introduction & Orientation of
-            Central University Jammu Cloud Club
-          </h3>
-
-          <p>
-            Kickstart the cloud journey and explore
-            opportunities within the student community.
-          </p>
-
-          <span class="event-link">
-            View Event
-            <i class="fa-solid fa-arrow-right"></i>
-          </span>
-
-        </a>
-
-
-        <!-- Event 2 -->
-
-        <a
-          href="event.html?event=ama"
-          class="event-card"
-        >
-
-          <div class="event-card-top">
-
-            <span class="event-number">
-              02
-            </span>
-
-            <span class="event-date">
-              01 Mar 2026
-            </span>
-
-          </div>
-
-          <h3>
-            Interactive Ask Me Anything
-            Session (AMA)
-          </h3>
-
-          <p>
-            An interactive session to discuss AWS,
-            cloud insights, practices and applications.
-          </p>
-
-          <span class="event-link">
-            View Event
-            <i class="fa-solid fa-arrow-right"></i>
-          </span>
-
-        </a>
-
-
-        <!-- Event 3 -->
-
-        <a
-          href="event.html?event=techxplore"
-          class="event-card"
-        >
-
-          <div class="event-card-top">
-
-            <span class="event-number">
-              03
-            </span>
-
-            <span class="event-date">
-              10 Apr 2026
-            </span>
-
-          </div>
-
-          <h3>
-            AWS TechXplore
-          </h3>
-
-          <p>
-            A technical session focused on cloud
-            deployment, IAM fundamentals and AWS.
-          </p>
-
-          <span class="event-link">
-            View Event
-            <i class="fa-solid fa-arrow-right"></i>
-          </span>
-
-        </a>
-
-
-        <!-- Event 4 -->
-
-        <a
-          href="event.html?event=kiro"
-          class="event-card"
-        >
-
-          <div class="event-card-top">
-
-            <span class="event-number">
-              04
-            </span>
-
-            <span class="event-date">
-              27 Jun 2026
-            </span>
-
-          </div>
-
-          <h3>
-            From Idea to App: Building with
-            IDE & Kiro CLI
-          </h3>
-
-          <p>
-            A practical session with Jasdeep Singh Bhalla
-            focused on turning ideas into applications.
-          </p>
-
-          <span class="event-link">
-            View Event
-            <i class="fa-solid fa-arrow-right"></i>
-          </span>
-
-        </a>
-
-
-        <!-- Event 5 -->
-
-        <a
-          href="event.html?event=agentic-ai"
-          class="event-card"
-        >
-
-          <div class="event-card-top">
-
-            <span class="event-number">
-              05
-            </span>
-
-            <span class="event-date">
-              01 Jul 2026
-            </span>
-
-          </div>
-
-          <h3>
-            Agentic AI on AWS
-          </h3>
-
-          <p>
-            AI Tech Talk Series hosted by AWS Skills
-            Centers exploring agentic AI and AWS.
-          </p>
-
-          <span class="event-link">
-            View Event
-            <i class="fa-solid fa-arrow-right"></i>
-          </span>
-
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- Current Core Team -->
-
-  <section id="members" class="section light-section">
-
-    <div class="section-container">
-
-      <div class="section-heading centered">
-
-        <span class="section-label">
-          OUR TEAM
-        </span>
-
-        <h2>
-          Current Working Team
-        </h2>
-
-        <p>
-          The team currently driving the AWS Student Builder
-          Group at Central University Of Jammu.
-        </p>
-
-      </div>
-
-
-      <div class="team-grid">
-
-
-        <!-- Mrigank -->
-
-        <div class="team-card">
-
-          <div class="team-photo">
-
-            <img
-              src="assets/team/mrigank.jpg"
-              alt="Mrigank Jaiswal"
-            />
-
-          </div>
-
-          <h3>
-            Mrigank Jaiswal
-          </h3>
-
-          <p>
-            Captain
-          </p>
-
-        </div>
-
-
-        <!-- Nilesh -->
-
-        <div class="team-card">
-
-          <div class="team-photo">
-
-            <img
-              src="assets/team/nilesh.jpg"
-              alt="Nilesh Kumar"
-            />
-
-          </div>
-
-          <h3>
-            Nilesh Kumar
-          </h3>
-
-          <p>
-            Vice Captain
-          </p>
-
-        </div>
-
-
-        <!-- Divyani -->
-
-        <div class="team-card">
-
-          <div class="team-photo">
-
-            <img
-              src="assets/team/divyani.jpg"
-              alt="Divyani Gupta"
-            />
-
-          </div>
-
-          <h3>
-            Divyani Gupta
-          </h3>
-
-          <p>
-            Technical Lead
-          </p>
-
-        </div>
-
-
-        <!-- Amrit -->
-
-        <div class="team-card">
-
-          <div class="team-photo">
-
-            <img
-              src="assets/team/amrit.jpg"
-              alt="Amrit Puri"
-            />
-
-          </div>
-
-          <h3>
-            Amrit Puri
-          </h3>
-
-          <p>
-            Social Media Lead
-          </p>
-
-        </div>
-
-
-        <!-- Shivam -->
-
-        <div class="team-card">
-
-          <div class="team-photo">
-
-            <img
-              src="assets/team/shivam.jpg"
-              alt="Shivam Yadav"
-            />
-
-          </div>
-
-          <h3>
-            Shivam Yadav
-          </h3>
-
-          <p>
-            Events & Outreach Lead
-          </p>
-
-        </div>
-
-
-        <!-- Robins -->
-
-        <div class="team-card">
-
-          <div class="team-photo">
-
-            <img
-              src="assets/team/robins.jpg"
-              alt="Robins Yadav"
-            />
-
-          </div>
-
-          <h3>
-            Robins Yadav
-          </h3>
-
-          <p>
-            Community & Engagement Lead
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <!-- New Core Team -->
-
-      <div class="new-core-team">
-
-        <div class="new-core-team-heading">
-
-          <span class="section-label">
-            2026–27
-          </span>
-
-          <h3>
-            New Core Team
-          </h3>
-
-          <p>
-            The student leads shaping the next chapter
-            of AWS SBG CUJ.
-          </p>
-
-        </div>
-
-
-        <div class="new-core-team-grid">
-
-
-          <!-- Nadim -->
-
-          <div class="new-core-team-card">
-
-            <div class="new-core-photo">
-
-              <img
-                src="assets/team/nadim.png"
-                alt=""
-              />
-
-            </div>
-
-            <h4>
-              Nadim Akhtar
-            </h4>
-
-            <p>
-              Technical Lead
-            </p>
-
-          </div>
-
-
-          <!-- Anuj -->
-
-          <div class="new-core-team-card">
-
-            <div class="new-core-photo">
-
-              <img
-                src="assets/team/anuj.png"
-                alt=""
-              />
-
-            </div>
-
-            <h4>
-              Anuj Mishra
-            </h4>
-
-            <p>
-              Social Media Lead
-            </p>
-
-          </div>
-
-
-          <!-- Unnati -->
-
-          <div class="new-core-team-card">
-
-            <div class="new-core-photo">
-            
-              <img
-                src="assets/team/unnati.png"
-                alt=""
-              />
-              
-            </div>
-
-            <h4>
-              Unnati Gupta
-            </h4>
-
-            <p>
-              Events & Outreach Lead
-            </p>
-
-          </div>
-
-
-          <!-- Abhinav -->
-
-          <div class="new-core-team-card">
-
-            <div class="new-core-photo">
-
-              <img
-                src="assets/team/abhinav.png"
-                alt=""
-              />
-
-            </div>
-
-            <h4>
-              Abhinav Kumar
-            </h4>
-
-            <p>
-              Community & Engagement Lead
-            </p>
-
-          </div>
-
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- WhatsApp Community -->
-
-  <section class="whatsapp-section">
-
-    <div class="whatsapp-card">
-
-      <div class="whatsapp-info">
-
-        <span class="whatsapp-kicker">
-          <i class="fa-brands fa-whatsapp"></i>
-          Community Chat
-        </span>
-
-        <h3 class="whatsapp-heading">
-          Join our WhatsApp Group
-        </h3>
-
-        <p class="whatsapp-text">
-          Get event updates, resources and community
-          discussions straight from the AWS Student Builder
-          Group at Central University Of Jammu.
-        </p>
-
-        <a
-          href="https://chat.whatsapp.com/Jc0kMEkO30XHVKgD3YGAwX?s=sh&p=a&mlu=4&ilr=4"
-          class="whatsapp-btn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fa-brands fa-whatsapp"></i>
-          Join WhatsApp Group
-        </a>
-
-      </div>
-
-      <div class="whatsapp-divider"></div>
-
-      <div class="whatsapp-qr-block">
-
-        <div class="whatsapp-qr-frame">
-
-          <img
-            src="assets/whatsapp-qr.png"
-            alt="Scan to join the AWS Student Builder Group WhatsApp group"
-          />
-
-        </div>
-
-        <span class="whatsapp-qr-label">
-          Scan to join instantly
-        </span>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- Footer -->
-
-  <footer class="footer">
-
-    <div class="footer-content">
-
-      <div class="footer-brand">
-
-        <img
-          src="assets/cloudclublogo.png"
-          alt="AWS Student Builder Group Logo"
-        />
-
-        <div>
-
-          <h3>
-            AWS Student Builder Group
-          </h3>
-
-          <p>
-            Central University Of Jammu
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <p class="footer-description">
-        A student community focused on cloud learning,
-        innovation, technical skills and building with AWS.
-      </p>
-
-
-      <div class="social-links">
-
-
-        <!-- Instagram -->
-
-        <div class="social-wrapper">
-
-          <a
-            href="https://www.instagram.com/aws.cujammu"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="social-icon instagram"
-            aria-label="Instagram"
-          >
-            <i class="fab fa-instagram"></i>
-          </a>
-
-          <span class="social-label">
-            Instagram
-          </span>
-
-        </div>
-
-
-        <!-- LinkedIn -->
-
-        <div class="social-wrapper">
-
-          <a
-            href="https://www.linkedin.com/company/aws-cloud-club-central-university-of-jammu/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="social-icon linkedin"
-            aria-label="LinkedIn"
-          >
-            <i class="fab fa-linkedin"></i>
-          </a>
-
-          <span class="social-label">
-            LinkedIn
-          </span>
-
-        </div>
-
-
-        <!-- Meetup -->
-
-        <div class="social-wrapper">
-
-          <a
-            href="https://www.meetup.com/aws-cloud-club-at-central-university-of-jammu/members/?op=all"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="social-icon meetup"
-            aria-label="Meetup"
-          >
-            <i class="fa-solid fa-users"></i>
-          </a>
-
-          <span class="social-label">
-            Meetup
-          </span>
-
-        </div>
-
-      </div>
-
-
-      <div class="footer-line"></div>
-
-
-      <p class="footer-note">
-        © 2026 AWS Student Builder Group Central University Of Jammu
-        • All rights reserved
-      </p>
-
-    </div>
-
-  </footer>
-
-
-  <!-- JavaScript -->
-
-  <script src="script.js"></script>
-
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
